@@ -59,10 +59,10 @@ class _ExpensioniveState extends State<Expensionive> {
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text('Isn\'t keep track of'),
-        duration: Duration(seconds: 2),
+        content: const Text('Isn\'t keep track of'),
+        duration: const Duration(seconds: 2),
         action: SnackBarAction(
-          label: 'Undo',
+          label: 'Doin\'t',
           onPressed: () {
             setState(() {
             _registeredExpenses.insert(expenseIndex, expense);
@@ -78,12 +78,12 @@ class _ExpensioniveState extends State<Expensionive> {
     showModalBottomSheet(
         context: context,
         builder: (ctx) {
-          return const Expanded(
+          return Expanded(
               child: Center(
                   child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.wheelchair_pickup),
@@ -92,10 +92,10 @@ class _ExpensioniveState extends State<Expensionive> {
                   Icon(Icons.accessible_rounded),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Text('That cautIONary tale')
+              Text('That cautIONary tale', style: Theme.of(context).textTheme.displayMedium,)
             ],
           )));
         });
@@ -129,7 +129,7 @@ class _ExpensioniveState extends State<Expensionive> {
       ),
       body: Column(
         children: [
-          const Text('GFDS'),
+          const SizedBox(height: 10,),
           Expanded(child: mainContent),
         ],
       ),

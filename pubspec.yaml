@@ -80,6 +80,15 @@ flutter:
      - family: newrocker
        fonts:
          - asset: lib\fonts\NewRocker-Regular.ttf
+     - family: butcherman
+       fonts:
+         - asset: lib\fonts\Butcherman-Regular.ttf
+     - family: monoton
+       fonts:
+        - asset: lib\fonts\Monoton-Regular.ttf
+     - family: fred
+       fonts:
+        - asset: lib\fonts\FrederickatheGreat-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
